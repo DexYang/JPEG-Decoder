@@ -20,6 +20,7 @@ sequential 会由上而下解码
 
 progressive 则在解码的过程中，从模糊渐渐变得清晰
 ![progressive ](https://raw.githubusercontent.com/MROS/jpeg_tutorial/master/doc/image/progressive.gif )
+
 ---
 #### baseline
 所有 JPEG 规范组合中，最为常见和简单的一种就是 baseline ，它的基本特征如下
