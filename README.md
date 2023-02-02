@@ -16,9 +16,11 @@ JPEG 这个标准其实定义了多种压缩算法以及编码方式
 - 无损（lossless）
 
 sequential 会由上而下解码
+
 ![sequential](https://raw.githubusercontent.com/MROS/jpeg_tutorial/master/doc/image/sequential.gif )
 
 progressive 则在解码的过程中，从模糊渐渐变得清晰
+
 ![progressive ](https://raw.githubusercontent.com/MROS/jpeg_tutorial/master/doc/image/progressive.gif )
 
 ---
@@ -35,11 +37,13 @@ progressive 则在解码的过程中，从模糊渐渐变得清晰
 ### JPEG 编/解码流程
 ---
 先看一张最简单的图
+
 ![](https://raw.githubusercontent.com/MROS/jpeg_tutorial/master/doc/image/%E7%B7%A8%E8%A7%A3%E7%A2%BC%E7%95%A5%E5%9C%96.jpg)
 
 相信这张图非常简单易懂，我们接着将压缩与解压缩的流程放大来看，baseline JPEG 会透过 DCT 变换，将原色彩空间映射到新空间，再使用霍夫曼编码尝试进行压缩。
 
 解码时则全部反过来，如下示意图
+
 ![](https://raw.githubusercontent.com/MROS/jpeg_tutorial/master/doc/image/%E7%B7%A8%E8%A7%A3%E7%A2%BC%E7%95%A5%E5%9C%962.jpg)
 
 DCT 变换以及霍夫曼编码，都是完全可逆的运算，也就是说这样得到的压缩文件是无损的，为了进一步提高压缩率， baseline JPEG 还会抛弃掉一些人类视觉上感受不明显的信息：
